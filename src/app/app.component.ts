@@ -1,0 +1,17 @@
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import {HeaderComponent} from './components/header/header.component'
+import { ProductListComponent } from "./pages/products-list/product-list.component";
+
+@Component({
+  selector: 'app-root',
+  imports: [HeaderComponent,RouterOutlet],
+  template: `
+    <app-header/>
+    <router-outlet/>
+  `,
+  styles: [],
+})
+export class AppComponent {
+  title = 'angular-ecom';
+}
